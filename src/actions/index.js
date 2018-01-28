@@ -14,6 +14,7 @@ export function fetchWeatherAction(city) {
   let location = city.split(',');
   const url = `${ROOT_URL}&q=${location[0]},${location[1]}`;
   const request = axios.get(url);
+  console.log('request', request);
   return {
     type: FETCH_WEATHER,
     payload: request
