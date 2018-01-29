@@ -14,7 +14,6 @@ class SearchBar extends Component {
   }
   onInputChange(event) {
     event.preventDefault();
-    console.log(event.target.value);
     this.setState({searchTerm: event.target.value})
   }
   onFormSubmit(event) {
@@ -31,7 +30,7 @@ class SearchBar extends Component {
           id="search-input"
           value={this.state.searchTerm}
           onChange={this.onInputChange}
-          placeholder="Location" />
+          placeholder="City, Country  -  Get a 5 days forecast in your favorite place" />
         <div className="input-group-btn">
           <button type="submit" className="btn btn-default">Submit</button>
         </div>
