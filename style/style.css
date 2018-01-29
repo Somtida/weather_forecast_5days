@@ -6,3 +6,8 @@ td, th {
 table {
   margin: 20px 0 !important;
 }
+
+td:first-of-type, td:first-of-type > div {
+  width: 250px;
+  height: 150px;
+}
